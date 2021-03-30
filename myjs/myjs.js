@@ -7,7 +7,7 @@ function populaDashboard(){
       
     async: true,
     url: "https://api-java-top.herokuapp.com/top",
-    method: "GET",
+    method: "POST",
 
     success:function(response){
 
@@ -30,7 +30,7 @@ function populaDashboard(){
       
             async: true,
             url: "https://api-java-top.herokuapp.com/top/process/"+pid,
-            method: "GET",
+            method: "POST",
     
             success:function(response){
 
