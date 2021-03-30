@@ -1,4 +1,4 @@
-const proxyurl = "https://cors-anywhere.herokuapp.com/";
+//const proxyurl = "https://cors-anywhere.herokuapp.com/";
 let data;
 
 
@@ -6,7 +6,7 @@ function populaDashboard(){
   $.ajax({
       
     async: true,
-    url: proxyurl + "https://api-java-top.herokuapp.com/top",
+    url: "https://api-java-top.herokuapp.com/top",
     method: "GET",
 
     success:function(response){
@@ -29,7 +29,7 @@ function populaDashboard(){
           $.ajax({
       
             async: true,
-            url: proxyurl + "https://api-java-top.herokuapp.com/top/process/"+pid,
+            url: "https://api-java-top.herokuapp.com/top/process/"+pid,
             method: "GET",
     
             success:function(response){
